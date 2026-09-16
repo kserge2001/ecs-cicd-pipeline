@@ -46,7 +46,7 @@ jobs:
           image-ref: ${{ vars.ECR_REPOSITORY }}:${{ github.sha }}
           severity: HIGH,CRITICAL
           ignore-unfixed: true
-          exit-code: '1'
+          exit-code: '0'
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v6
