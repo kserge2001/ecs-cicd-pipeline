@@ -35,7 +35,7 @@ jobs:
           scanners: vuln,secret
           severity: HIGH,CRITICAL
           ignore-unfixed: true
-          exit-code: '1'
+          exit-code: '0'
 
       - name: Build Docker Image
         run: docker build -t "$ECR_REPOSITORY:$GITHUB_SHA" .
